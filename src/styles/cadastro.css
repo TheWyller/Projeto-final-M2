@@ -1,0 +1,249 @@
+*{
+    font-family: 'Poppins';
+    font-style: normal; 
+    box-sizing: border-box;
+}
+
+:root {
+    --Color-primary: #FF2253;
+    --Color-primary-50: #FFE9EE;
+    --Color-Secondary: #4ACA94;
+    --Color-Secondary-50: #E4F7EF;
+    --Product-1: #EEF6FF ;
+    --Product-2: #FFF7F4;
+    --Product-3: #FFE4EA;
+    --Product-4: #F3EEF5;
+    --Grey-4: #212529;
+    --Grey-3: #868E96;
+    --Grey-2: #E9ECEF;
+    --Grey-1: #F8F9FA;
+    --color-text-wh: #fff;
+}
+
+.cadastro{
+
+    background-color: var(--Grey-4);
+    border-radius: 25px;
+    margin: 35px auto;
+    width: 300px;
+    height: 500px;
+}
+
+.cadastro__conteiner--titulo{
+
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E9ECEF;
+    border-radius: 25px 25px 0px 0px;
+    margin-bottom: 30px;
+}
+
+.cadastro input{
+
+    background-color: var(--Grey-2);
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom:20px;
+    padding: 0px 10px;
+    
+}
+
+.cadastro input:focus{
+
+    outline: 0;
+    border: solid var(--Grey-4);
+}
+
+.cadastro label{
+
+    color: var(--Color-primary);
+    margin: 0px 0px 15px 45px ;
+}
+
+.cadastro p{
+
+    text-align: center;
+}
+
+.cadastro p a{
+
+    color: var(--Color-primary);
+    text-decoration: none;    
+}
+
+#cadastro__submit{
+
+    border-style: none;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 150px;
+    color: var(--Color-primary); 
+    background: var(--Grey-2);   
+    
+}
+
+#cadastro__submit:hover{
+    cursor: pointer;
+
+}
+
+#cadastro__submit:active{
+
+    opacity: 0.6;
+}
+
+/*_______________modal error cadastro________________*/
+
+.modal__error{
+
+    position: absolute;
+    bottom: 3vh;
+    right: 3.3vw;
+
+    width: 350px;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.error__button{
+
+    background-color: #F8F9FA;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    gap: 26px;
+
+    border-radius: 15px 15px 0px 0px;
+}
+
+.error__button button{
+
+    border-style: none;
+    border-radius: 5px;
+}
+
+.error__button button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.error{
+    color: var(--Grey-4);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.modal__Error--message{
+
+    font-size: small;
+    padding-left: 10px;
+}
+
+.status__error--red{
+
+    background-color: var(--Color-primary);
+    height: 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+@media (min-width: 769px) {
+
+    .cadastro{
+
+        background-color: var(--Grey-4);
+        border-radius: 25px;
+        margin: 150px auto;
+        width: 300px;
+        height: 500px;
+    }
+    
+    .cadastro__conteiner--titulo{
+    
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #E9ECEF;
+        border-radius: 25px 25px 0px 0px;
+        margin-bottom: 30px;
+    }
+    
+    .cadastro input{
+    
+        width: 220px;
+        height: 50px;
+        border-radius: 15px;
+        margin-left: 13%;
+        margin-right: 13%;
+        margin-bottom:20px;
+        padding: 0px 10px;
+    }
+    
+    .cadastro label{
+    
+        color: var(--Color-primary);
+        margin: 0px 0px 15px 45px ;
+    }
+    
+    .cadastro p{
+    
+        text-align: center;
+    }
+    
+    .cadastro p a{
+    
+        color: var(--Color-primary);
+        text-decoration: none;    
+    }
+    
+    #cadastro__submit{
+    
+        border-style: none;
+        margin-top: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 150px;
+        color: var(--Color-primary);    
+        
+    }
+    
+    #cadastro__submit:hover{
+        cursor: pointer;
+    
+    }
+    
+    #cadastro__submit:active{
+    
+        opacity: 0.6;
+    }
+    
+    .modal__error{
+
+        position: absolute;
+        top: 3vh;
+        right: 40.5%;
+        left: 40.5%;
+    }
+}
+
+

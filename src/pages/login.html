@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="box">
+        <div class="box__text">
+            <img src="../assets/LOGO.svg" alt="imagem logo da Kenzie Food">
+        </div>
+        <div class="box__register">
+            <section class="box__label--label">
+                <label for="login">login:</label><input type="email" placeholder="Digite seu email" name="login" id="login--email">
+            </section>
+
+            <section class="box__label--label">
+                <label for="senha">senha:</label><input type="password" placeholder="Digite sua senha" name="senha" id="login--password">
+            </section>
+            <section class="box__button--button">
+                <button>LOGIN</button>
+            </section>
+        </div>
+        <div class="box__span">
+            <a href="./cadastro.html"><span>Ainda não tem cadastro ?</span></a>
+        </div>
+        <div class="box__popup">
+            <p class="box__alert">Login e senha inválida</p>
+            <p class="box__close">x</p>
+        </div>
+</main>
+    <script type="module" src="../scriptLogin.js"></script>
+</body>
+</html>

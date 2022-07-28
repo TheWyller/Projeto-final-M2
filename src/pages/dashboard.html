@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header></header>
+    <main>
+
+        <section class=" nav_itensAndBotao">
+            <nav>
+                <button class="button__nav button__nav--todos ">Todos</button>
+                <button class="button__nav button__nav--panificadora "><img src="../assets/Panificadora-icon.svg">Panificadora</button>
+                <button class="button__nav button__nav--frutas "><img src="../assets/Frutas-icon.svg">Frutas</button>
+                <button class="button__nav button__nav--bebidas "><img src="../assets/Bebidas-icon.svg">Bebidas</button>
+            </nav>
+            <button class=" add__prod">Adicionar novo produto</button>
+        </section>
+        <section class="list__products">
+            <div class="prod__action">
+                <p>Produto</p>
+                <p class= "category margem">Categoria</p>
+                <p class= "description">Descrição</p>
+                <p>Ações</p>
+            </div>
+            <ul class="list"></ul>
+        </section>
+
+        <section class="showcase">
+
+        </section>
+
+        <section class="active__status">
+           <!--Modais status-->         
+        </section>
+
+        <section id ="modal__register">
+            <!--Modais status-->  
+        </section>
+
+        <section id ="modal__edit">
+            <!--Modais status-->   
+        </section>
+
+        <section id ="modal__delete" >
+            <!--Modais status-->
+        </section>
+
+        
+
+
+
+    </main>
+    <script type="module" src="../scriptDash.js"></script>
+</body>
+</html>

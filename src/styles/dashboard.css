@@ -1,0 +1,1252 @@
+:root {
+    --Color-primary: #FF2253;
+    --Color-primary-50: #FFE9E;
+    --Color-Secondary: #4ACA94;
+    --Color-Secondary-50: #E4F7EF;
+    --Product-1: #EEF6FF ;
+    --Product-2: #FFF7F4;
+    --Product-3: #FFE4EA;
+    --Product-4: #F3EEF5;
+    --Grey-4: #212529;
+    --Grey-3: #868E96;
+    --Grey-2: #E9ECEF;
+    --Grey-1: #F8F9FA;
+}
+
+
+body{
+    width: auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* _____________HEADER______________ */
+header{
+    padding: 11px 15px 0 18px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+header > div{
+    display: flex;
+    align-items: flex-end;
+}
+header > div > p:nth-child(1){
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.6949px;
+    line-height: 33px;
+    color: var(--Grey-4);
+    margin-right: 7px;
+    
+}
+header > div > p:nth-child(2){
+    padding-bottom: 2.5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2712px;
+    line-height: 24px;
+    color: var(--Color-primary);
+    vertical-align: bottom;
+}
+
+header > div:nth-child(2) > input{
+    border: none;
+    background-color: var(--Grey-2);
+    width: 342px;
+    height: 49px;
+    padding: 15px 18px 15px 48px;
+    border: 1.5px solid #E9ECEF;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--Grey-3);
+    margin-top: 36px;
+}
+header > div:nth-child(2) > span{
+    position: relative;
+    bottom:15px;
+    right: 355px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../assets/search.svg);
+    background-size: 18px 18px;
+}
+header > div:nth-child(2) > button{
+    position: relative;
+    bottom:85px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../assets/icon_user.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+/* começa modal */
+
+.modalUser{
+    display: none;
+}
+
+header > div:nth-child(2) > button > div:nth-child(2){
+    display: none;
+}
+header > div:nth-child(2) > button:hover > div:nth-child(2){
+    display: block;
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: relative;
+    left: -15px;
+    top: 35px;
+    z-index: 2;
+}
+header > div:nth-child(2) > button:hover .modalUser{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    width: 350px;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.nameUser{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: inline;
+    width: auto;
+    text-align: start;
+    padding: 12px 15px;
+    border-bottom: 2px solid var(--Grey-2);
+    
+}
+.modalUser > button{
+    border: none;
+    background: var(--Grey-1);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Grey-4);
+    border-radius: 10px;
+}
+.modalUser > button:hover{
+    border: 2px solid var(--Grey-3);
+    text-decoration: underline;
+    
+}
+/* _____________END HEADER______________ */
+
+
+/*_________________modal status____________________*/
+
+.modal__status{
+    background-color: white;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    width: 365px;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.status__button{
+    background-color: var(--Grey-2);
+    border: 0.5px solid var(--Grey-2);
+    height: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    gap: 256px;
+
+    border-radius: 15px 15px 0px 0px;
+}
+
+.status__button button{
+
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--Grey-2);
+}
+
+.status__button button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.stts{
+    color: var(--Grey-4);
+
+    
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+
+
+}
+
+.status__color--red{
+
+    background-color: var(--Color-primary);
+    height: 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.modal__status--error{
+    font-size: smaller;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.status__color--green{
+
+    background-color: var(--Color-Secondary);
+    height: 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.modal__status--assert{
+
+    font-size: smaller;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/*___________page style___________*/
+
+
+.nav_itensAndBotao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100vw;
+    margin-top: 10px;
+}
+
+
+.nav_itensAndBotao nav{
+    display: flex;
+    margin: 13px 0px 13px 0px;
+
+    padding: 0px 0px 15px 5px;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+}
+
+.button__nav{
+
+    border-style: none;
+    border-radius: 50px;
+    margin-right: 7px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    padding: 15px 25px; 
+    display: flex; 
+    gap: 5px; 
+
+}
+
+.button__nav:hover{
+
+    cursor: pointer;
+    background-color: var(--Color-primary);
+    color: var(--Grey-1);
+}
+
+.button__nav--todos{
+    color: var(--Grey-1);
+    background-color: var(--Color-primary);
+}
+
+.button__nav--panificadora{
+    color: var(--Grey-4);
+    background-color: var(--Product-2);
+}
+
+.button__nav--frutas{
+    color: var(--Grey-4);
+    background-color: var(--Product-3);;
+}
+
+.button__nav--bebidas{
+    color: var(--Grey-4);
+    background-color: var(--Product-4);
+}
+
+.add__prod{
+    color: var(--Grey-1);
+    background-color: var(--Color-primary);
+    border-style: none;
+    border-radius: 50px;
+    margin-right: 16px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+    margin: 0px auto;
+}
+
+.add__prod:hover{
+
+    cursor: pointer;
+    
+}
+
+.prod__action{
+    color: var(--Grey-3);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: smaller;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 30px;
+    margin-top: 30px;
+
+    padding-right: 28px;
+    padding-left: 78px;
+}
+
+
+.description{
+    display: none;
+}
+.category{
+    display: none;
+}
+
+/*_______list style_______*/
+
+
+
+.list{
+
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.item__list--dash{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: small;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.item__list--dash:hover{
+
+    background-color: var(--Grey-2);
+    border-radius: 15px;
+}
+
+.pic__name{
+
+    color: var(--Grey-4);
+    display: flex;
+    align-items: center;
+}
+
+.img_dash--produto{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.infos{
+    display: none;
+}
+
+.imgs{
+
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    margin-right: 15px;
+}
+
+.img_dash--edit{
+    width: 11px;
+    height: 11px;
+}
+
+.img_dash--delete{
+    width: 10px;
+    height: 10px;
+}
+
+/*____________________MODAL REGISTER PRODUCTS______________________*/
+
+.active__register, .active__edit, .active__delete{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    left: 0vw;
+    top: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.externalBox{
+    background-color: #FFFFFF;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    border-radius: 8px;
+    
+}
+
+
+.modal__productsHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+    width: 300px;
+    height: 70px;
+    padding: 20px 28px;
+}
+.modal__productsHeader > h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.modal__productsHeader > button{
+    width: 31px;
+    height: 30px;
+    border: none;
+    color: #868E96;
+    cursor: pointer;
+}
+.modal__productsHeader > button:hover{
+    border: 1.5px solid var(--Grey-3);
+}
+
+.modal__productsForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.modal__productsForm > label{
+    width: 250px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Grey-4);
+    margin-bottom: 10px;  
+}
+.modal__productsForm > input{
+    padding: 26px 2px 26px 20px;
+    width: 250px;
+    height: 10px;
+    background: var(--Grey-1);
+    border: 1.5px solid var(--Grey-2);
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+#description{
+    height: 80px;
+    padding: 6px 10px 10px;
+}
+
+.modal__productsForm > input:focus{
+    background: #FFFFFF;
+}
+
+#categories{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+
+}
+
+#categories > button{
+    padding: 0px 20px;
+    width: auto;
+    height: 40px;
+    background: var(--Grey-1);
+    border: 1.5px solid var(--Grey-1);
+    border-radius: 32px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 17px;
+    color: var(--Grey-3);
+    cursor: pointer;
+}
+
+#categories > button:hover{
+    border: 1.5px solid var(--Grey-3);
+}
+
+#categories > .clicked{
+    background: var(--Color-primary);
+    color: var(--Grey-1);
+}
+
+.modal__productsButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 47px;
+}
+
+.modal__productsButtons > button:nth-child(2){
+    width: 240px;
+    height: 52px;
+    background: var(--Color-primary);
+    border: 1.5px solid var(--Color-primary);
+    border-radius: 32px;
+    color: var(--Grey-1);
+    cursor: pointer;
+}
+
+
+.modal__productsButtons > button:nth-child(1){
+    width: 100px;
+    height: 52px;
+    background: var(--Grey-1);
+    border: 1.5px solid var(--Grey-1);
+    border-radius: 32px;
+    color: var(--Grey-3);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#btnRegister_product{
+    width: 200px;
+    height: 52px;
+    background: var(--Color-primary);
+    border: 1.5px solid var(--Color-primary);
+    border-radius: 32px;
+    color: var(--Grey-1);
+    cursor: pointer;
+}
+
+/* _______ modal de exclusão ________ */
+.active__delete {
+    height: 100vh;
+}
+.active__delete > section{
+    width: 260px;
+    height: 50vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    border-radius: 8px
+}
+
+.active__delete > section > div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+    width: 496px;
+    height: 70px;
+    padding: 20px 28px;
+}
+.active__delete > section > div:nth-child(1) > h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.active__delete > section > div:nth-child(1) > button{
+    width: 31px;
+    height: 30px;
+    border: none;
+    color: #868E96;
+    cursor: pointer;
+}
+.active__delete > section > div:nth-child(1) > button:hover{
+    border: 1.5px solid var(--Grey-3);
+}
+.active__delete > section > p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.active__delete > section > div:nth-child(3) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.active__delete > section > div:nth-child(3) > button{
+    width: 210px;
+    height: 52px;
+    background: var(--Grey-1);
+    border: 1.5px solid var(--Grey-1);
+    border-radius: 32px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active__delete > section > div:nth-child(3) > button:hover{
+    border: 1.5px solid var(--Grey-3);
+}
+
+
+@media(min-width:768px){
+    
+    /* _____________HEADER______________ */
+
+    header{
+        padding: 11px 118px 0 117px;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: unset;
+        overflow-y: unset;
+        
+    }
+    header > div > p:nth-child(2){
+        margin: 0 0;
+        padding-top: 7px;
+        width: auto;
+    }
+    header > div:nth-child(2) > input{
+        margin-top: 0px;
+        
+    }
+    header > div:nth-child(2) > button{
+        position: unset;
+        width: 36px;
+        height: 36px;
+        background-size: 36px 36px;
+        margin: auto 0;
+        margin-left: 34px;
+    }
+    header > div:nth-child(2) > span{
+        right: 395px;
+    }
+
+    /* começa modal */
+
+    .modalUser{
+        display: inline-flex;
+        transition: all 0s ease 0s;
+        visibility: hidden;
+    }
+    header > div:nth-child(2) > button{
+        cursor: pointer;
+    }
+    header > div:nth-child(2) > button > div:nth-child(2){
+        display: inline-flex;
+        transition: all 0s ease 0s;
+        visibility: hidden;
+    }
+    header > div:nth-child(2) > button:hover > div:nth-child(2){
+        left: 0px;
+        bottom: 0px;
+        transition-delay: 0s;
+        visibility: visible;
+        z-index: 2;
+        
+    }
+    header > div:nth-child(2) > button:hover > .modalUser{
+        right: 120px;
+        top: 65px;
+        width: 206px;
+        height: 127px;
+        transition-delay: 0s;
+        visibility: visible;
+        z-index: 1;
+    
+    }
+    .nameUser{
+        width: 175px;
+        display: block;
+    }
+    .modalUser > button{
+        cursor: pointer;
+        width: 60%;
+    }
+    .modalUser > button:hover{
+        border: 2px solid var(--Grey-3);
+        text-decoration: underline;
+        
+    }
+    
+    /* _____________END HEADER______________ */
+    
+    /*____________________MODAL STATUS______________________*/
+
+
+    *{
+        font-family: 'Poppins';
+        font-style: normal;
+        box-sizing: border-box;    
+    }
+
+
+    /*____________________MODAL STATUS______________________*/
+
+
+    .modal__status{
+
+        position: absolute;
+        bottom: 1vh;
+        right: 1vw;
+        
+        width: 496px;
+        height: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+    }
+
+    .status__button{
+        background-color: #F8F9FA;
+        height: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 28px;
+        gap: 256px;
+
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .status__button button{
+
+        border-style: none;
+        border-radius: 5px;
+    }
+
+    .status__button button:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .stts{
+        color: var(--Grey-4);
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .status__color--red{
+
+        background-color: var(--Color-primary);
+        height: 10px;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .modal__status--error{
+        margin-left: 10px;
+    }
+
+    .status__color--green{
+
+        background-color: var(--Color-Secondary);
+        height: 10px;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .modal__status--assert{
+        margin-left: 10px;
+    }
+
+    .assert-none{
+        display: flex;
+    }
+
+    .error-none{
+        display: flex;
+    }
+
+    /*__________________style page_________________*/
+
+    .nav_itensAndBotao{
+        
+        height: 92px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 50px;
+        align-items:flex-end;
+    }
+
+    .nav_itensAndBotao nav{
+
+        
+        width: 430px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 60px;
+        overflow-y: unset;
+    }
+
+    .button__nav{
+
+        border-style: none;
+        border-radius: 50px;
+        margin-right: 16px;
+        height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding: 15px;
+
+        display: flex;
+        gap: 8px;
+    }
+
+    .button__nav:hover{
+
+        cursor: pointer;
+        background-color: var(--Color-primary);
+        color: var(--Grey-1);
+    }
+
+    .button__nav--todos{
+        color: var(--Grey-1);
+        background-color: var(--Color-primary);
+    }
+
+    .button__nav--panificadora{
+        color: var(--Grey-4);
+        background-color: var(--Product-2);
+    }
+
+    .button__nav--frutas{
+        color: var(--Grey-4);
+        background-color: var(--Product-3);;
+    }
+
+    .button__nav--bebidas{
+        color: var(--Grey-4);
+        background-color: var(--Product-4);
+    }
+
+    .add__prod{
+        color: var(--Grey-1);
+        background-color: var(--Color-primary);
+        border-style: none;
+        border-radius: 50px;
+        margin-right: 16px;
+        margin-bottom: 13px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px;
+    }
+
+    .add__prod:hover{
+
+        cursor: pointer;
+    }
+
+
+    /*__________list style___________*/
+
+    .prod__action{
+        color: var(--Grey-3);
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: smaller;
+    
+        display: flex;
+        justify-content: space-around;
+        
+    
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 30px;
+    
+        padding-right: 68px;
+        padding-left: 98px;
+    }
+
+    .prod__action p{
+        display: flex;       
+        
+    }
+
+    .margem{
+
+        margin-right: 230px;
+        margin-left: 230px;
+    }
+
+    .list{
+
+        padding: 50px;
+    }
+
+
+    .cont__categoria{
+        display: block;
+        width: 100px;
+        font-size: small;
+    }
+
+    .categoria{
+
+        background-color: var(--Product-4);
+        padding: 5px;
+        border-radius: 25px;
+    }
+
+    .description{
+        display: block;
+        width: 300px;
+        text-align: justify;
+    }
+
+    .infos{
+
+        color: var(--Grey-3);
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 66%;
+    }
+
+    .pic__name{
+        width: 300px;
+    }
+
+    .imgs{
+
+        width: 90px;
+    }
+
+
+    /*____________________MODAL REGISTER PRODUCTS______________________*/
+
+
+    .active__register, .active__edit, .active__delete{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 1;
+        left: 0vw;
+        top: 0vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .externalBox{
+        background-color: #FFFFFF;
+        width: 496px;
+        height: 755px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        border-radius: 8px;
+        
+    }
+
+
+    .modal__productsHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #F8F9FA;
+        border-radius: 8px 8px 0px 0px;
+        width: 496px;
+        height: 70px;
+        padding: 20px 28px;
+    }
+    .modal__productsHeader > h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .modal__productsHeader > button{
+        width: 31px;
+        height: 30px;
+        border: none;
+        color: #868E96;
+        cursor: pointer;
+    }
+    .modal__productsHeader > button:hover{
+        border: 1.5px solid var(--Grey-3);
+    }
+
+    .modal__productsForm{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .modal__productsForm > label{
+        width: 440px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--Grey-4);
+        margin-bottom: 10px;  
+    }
+    .modal__productsForm > input{
+        padding: 26px 2px 26px 20px;
+        width: 440px;
+        height: 52px;
+        background: var(--Grey-1);
+        border: 1.5px solid var(--Grey-2);
+        border-radius: 12px;
+        margin-bottom: 35px;
+    }
+    #description{
+        height: 80px;
+        padding: 6px 20px 20px;
+    }
+
+    .modal__productsForm > input:focus{
+        background: #FFFFFF;
+    }
+
+    #categories{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 35px;
+
+    }
+
+    #categories > button{
+        padding: 0px 20px;
+        width: 136px;
+        height: 40px;
+        background: var(--Grey-1);
+        border: 1.5px solid var(--Grey-1);
+        border-radius: 32px;
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--Grey-3);
+        cursor: pointer;
+    }
+
+    #categories > button:hover{
+        border: 1.5px solid var(--Grey-3);
+    }
+
+    #categories > .clicked{
+        background: var(--Color-primary);
+        color: var(--Grey-1);
+    }
+
+    .modal__productsButtons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 47px;
+    }
+
+    .modal__productsButtons > button:nth-child(2){
+        width: 240px;
+        height: 52px;
+        background: var(--Color-primary);
+        border: 1.5px solid var(--Color-primary);
+        border-radius: 32px;
+        color: var(--Grey-1);
+        cursor: pointer;
+    }
+
+
+    .modal__productsButtons > button:nth-child(1){
+        width: 192px;
+        height: 52px;
+        background: var(--Grey-1);
+        border: 1.5px solid var(--Grey-1);
+        border-radius: 32px;
+        color: var(--Grey-3);
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    #btnRegister_product{
+        width: 440px;
+        height: 52px;
+        background: var(--Color-primary);
+        border: 1.5px solid var(--Color-primary);
+        border-radius: 32px;
+        color: var(--Grey-1);
+        cursor: pointer;
+    }
+
+    /* _______ modal de exclusão ________ */
+
+    .active__delete > section{
+        width: 496px;
+        height: 283px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        border-radius: 8px
+    }
+
+    .active__delete > section > div:nth-child(1){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #F8F9FA;
+        border-radius: 8px 8px 0px 0px;
+        width: 496px;
+        height: 70px;
+        padding: 20px 28px;
+    }
+    .active__delete > section > div:nth-child(1) > h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .active__delete > section > div:nth-child(1) > button{
+        width: 31px;
+        height: 30px;
+        border: none;
+        color: #868E96;
+        cursor: pointer;
+    }
+    .active__delete > section > div:nth-child(1) > button:hover{
+        border: 1.5px solid var(--Grey-3);
+    }
+    .active__delete > section > p{
+        width: 100%;
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        color: #000000;
+    }
+
+    .active__delete > section > div:nth-child(3) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .active__delete > section > div:nth-child(3) > button{
+        width: 210px;
+        height: 52px;
+        background: var(--Grey-1);
+        border: 1.5px solid var(--Grey-1);
+        border-radius: 32px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .active__delete > section > div:nth-child(3) > button:hover{
+        border: 1.5px solid var(--Grey-3);
+    }
+    
+}
+
+

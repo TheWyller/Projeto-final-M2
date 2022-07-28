@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="main">
+        <form class="cadastro" action="#">
+            <div class="cadastro__conteiner--titulo">
+                <img src="../assets/LOGO.svg" alt="">
+            </div>            
+
+            <label class="cadastro__label--name" for="name">nome:</label>
+            <input class="cadastro__name" name="name" type="text">
+            
+            <label class="cadastro__label--email" for="email">email:</label>
+            <input class="cadastro__email" name="email" type="email">
+            
+            <label class="cadastro__label--password" for="password">senha:</label>
+            <input class="cadastro__password" name="password" type="password">
+
+            <p><a class="cadastro__aergunta" href="../pages/login.html">Já é cadastrado?</a></p>
+            
+            <input id="cadastro__submit" type="submit" value="CADASTRAR">
+        </form>
+    </main>
+    <script type="module" src="../scriptCadastro.js"></script>
+</body>
+</html>
